@@ -739,6 +739,70 @@ footer {
   fill: var(--hero-and-city-word-color);
 }
 
+.form-in-footer {
+  margin-top: 20px;
+  display: flex;
+}
+
+.form-in-footer-text {
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.mail-form-in-footer {
+display: inline-block;
+background-color: var(--footer-bg-color);
+outline: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+width: 358px;
+height: 50px;
+margin-right: 12px;
+transition-property: border;
+transition-duration: var(--anim-transition-duration);
+transition-timing-function: var(--anim-transition-timing-function);
+}
+
+.mail-form-in-footer:focus {
+  outline: none; 
+  border: 1px solid rgba(33, 150, 243, 0);
+}
+
+.mail-form-in-footer::placeholder {
+  color: rgba(255, 255, 255, 0,3);
+  padding-left: 16px;
+}
+
+.button-form-in-footer {
+display: inline-block;
+background: var(--second-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+width: 200px;
+height: 50px;
+letter-spacing: 0.06em;
+color: var(--hero-and-city-word-color);
+font-weight: bold;
+font-size: 16px;
+line-height: 1.9;
+display: flex;
+align-items: center;
+padding-left: 29px;
+padding-right: 18px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.footer-button-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
 /* *********************************  modal  ****************************** */
 
 .backdrop {
@@ -795,5 +859,6 @@ footer {
 .modal-close-button:hover .modal-close-button-icon,
 .modal-close-button:focus .modal-close-button-icon {
   fill: var(--second-color);
-  stroke: var(--second-color);
+  /* stroke: var(--second-color); */
 }
+
