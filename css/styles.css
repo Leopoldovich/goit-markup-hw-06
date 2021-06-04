@@ -953,7 +953,6 @@ footer {
   border-radius: 4px;
   padding: 12px 16px;
   margin-top: 4px;
-  /* margin-bottom: 20px; */
   transition-property: border;
   transition-duration: var(--anim-transition-duration);
   transition-timing-function: var(--anim-transition-timing-function);
