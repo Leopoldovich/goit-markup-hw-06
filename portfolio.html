@@ -75,19 +75,25 @@
           <h1 class="heading-hidden">Меню портфолио</h1>
           <ul class="list portfolio-filter-btn-box">
             <li class="list portfolio-filter-btn-box-item">
-              <button class="buttons" type="button">Все</button>
+              <button class="buttons" type="button" name="portfolio-filter-button">Все</button>
             </li>
             <li class="list portfolio-filter-btn-box-item">
-              <button class="buttons" type="button">Веб-сайты</button>
+              <button class="buttons" type="button" name="portfolio-filter-button">
+                Веб-сайты
+              </button>
             </li>
             <li class="list portfolio-filter-btn-box-item">
-              <button class="buttons" type="button">Приложения</button>
+              <button class="buttons" type="button" name="portfolio-filter-button">
+                Приложения
+              </button>
             </li>
             <li class="list portfolio-filter-btn-box-item">
-              <button class="buttons" type="button">Дизайн</button>
+              <button class="buttons" type="button" name="portfolio-filter-button">Дизайн</button>
             </li>
             <li class="list portfolio-filter-btn-box-item">
-              <button class="buttons" type="button">Маркетинг</button>
+              <button class="buttons" type="button" name="portfolio-filter-button">
+                Маркетинг
+              </button>
             </li>
           </ul>
 
@@ -321,11 +327,14 @@
           <b class="form-in-footer-text">Подпишитесь на рассылку</b>
 
           <form class="form-in-footer">
-            <label></label>
-            <input class="mail-form-in-footer" type="email" name="" placeholder="E-mail" />
+            <input
+              class="mail-form-in-footer"
+              type="email"
+              name="footer-mail-form"
+              placeholder="E-mail"
+            />
 
-            <label></label>
-            <button class="button-form-in-footer" type="submit">
+            <button class="button-form-in-footer" type="submit" name="footer-send-button">
               Подписаться
               <svg class="footer-button-icon">
                 <use href="./images/icons.svg#icon-icon-send"></use>

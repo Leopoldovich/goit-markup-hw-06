@@ -76,7 +76,9 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+          <button class="hero-button" type="button" name="hero-button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -437,11 +439,14 @@
           <b class="form-in-footer-text">Подпишитесь на рассылку</b>
 
           <form class="form-in-footer">
-            <label></label>
-            <input class="mail-form-in-footer" type="email" name="" placeholder="E-mail" />
+            <input
+              class="mail-form-in-footer"
+              type="email"
+              name="footer-mail-form"
+              placeholder="E-mail"
+            />
 
-            <label></label>
-            <button class="button-form-in-footer" type="submit">
+            <button class="button-form-in-footer" type="submit" name="footer-send-button">
               Подписаться
               <svg class="footer-button-icon">
                 <use href="./images/icons.svg#icon-icon-send"></use>
@@ -461,7 +466,87 @@
             <use href="./images/icons.svg#icon-cros-closed"></use>
           </svg>
         </button>
-        <form></form>
+
+        <form class="modal-forms">
+          <p class="modal-form-text">Оставьте свои данные, мы вам перезвоним</p>
+
+          <label class="modal-label"
+            >Имя
+            <span class="modal-box">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                minlength="2"
+                required
+                placeholder="Ivan Ivanov"
+              />
+              <svg class="modal-input-icon">
+                <use href="./images/icons.svg#icon-modal-man"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-label"
+            >Телефон
+            <span class="modal-box">
+              <input
+                type="tel"
+                name="user-tel"
+                class="modal-input"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="044-568-96-73"
+                placeholder="044-568-96-73"
+              />
+              <svg class="modal-input-icon">
+                <use href="./images/icons.svg#icon-modal-phone"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-label"
+            >Почта
+            <span class="modal-box">
+              <input
+                type="email"
+                name="user-mail"
+                class="modal-input"
+                required
+                placeholder="kotovskiy@mail.com"
+              />
+              <svg class="modal-input-icon">
+                <use href="./images/icons.svg#icon-modal-mail"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-label-textarea">
+            Комментарий
+            <textarea
+              name="user-message"
+              class="modal-message"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+
+          <input
+            type="checkbox"
+            name="user-policy"
+            class="modal-form-checkbox"
+            id="checkbox-policy"
+            required
+          />
+
+          <label for="checkbox-policy" class="modal-form-checkbox-policy"
+            >Соглашаюсь с рассылкой и принимаю
+            <a class="modal-form-policy-link" href="">Условия договора</a></label
+          >
+
+          <button type="submit" class="modal-send-button" name="modal-send-button">
+            Отправить
+          </button>
+        </form>
       </div>
     </div>
 
