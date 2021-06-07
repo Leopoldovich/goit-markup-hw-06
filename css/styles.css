@@ -983,13 +983,13 @@ footer {
   color: var(--main-color);
 }
 
+/* .modal-form-checkbox:focus + .modal-form-checkbox-policy::before {
+  background-image: url('../images/icon-check.svg');
+} */
+
 .modal-form-checkbox:checked + .modal-form-checkbox-policy::before {
   background-image: url('../images/icon-check.svg');
-}
-
-.modal-form-checkbox:focus + .modal-form-checkbox-policy::before {
-  background-image: url('../images/icon-check.svg');
-}
+} 
 
 .modal-send-button {
   width: 200px;
